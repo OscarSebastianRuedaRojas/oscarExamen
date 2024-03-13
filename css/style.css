@@ -109,3 +109,65 @@ diseño-app, monetizacion-app, autenticacion-app{
     display: flex;
     justify-content: center;
 }
+.resumen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resumen p{
+    color: white;
+    font-size: 1.2rem;
+}
+.resumen h4{
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.resumen .redesSociales i{
+    color: white;
+}
+.resumen .redesSociales button{
+    padding: 0.2rem;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.resumen .redesSociales .facebook{
+    background-color: rgb(7, 7, 209);
+}
+.resumen .redesSociales .linkedin{
+    background-color: rgb(61, 61, 247);
+}
+.resumen .redesSociales .Google{
+    background-color: rgb(249, 10, 10);
+}
+.resumen .redesSociales .twitter{
+    background-color: rgb(84, 196, 240);
+}
+.resumen h3{
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.resumen h1{
+    color: rgb(31, 220, 220);
+    font-size: 3rem;
+}
+.resumen a{
+    list-style: none;
+    color: white;
+    margin: 1.3rem 0rem;
+}
+.resumen #terminar{
+    padding: 1rem 3rem;
+    color: white;
+    background-color: rgb(31, 220, 220);
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}

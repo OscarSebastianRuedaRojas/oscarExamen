@@ -50,7 +50,7 @@ export class Autenticacion extends HTMLElement {
         card.addEventListener("click", ()=>{
             const precio = Number(card.id)
             sumarPrecio(precio)
-            mainContent.innerHTML = "<monetizacion-app></monetizacion-app>"
+            mainContent.innerHTML = "<resumen-precio></resumen-precio>"
         })
     });
     }

@@ -6,5 +6,6 @@ const sumar = (precio)=>{
 }
 const devolver = ()=> precioTotal
 export{
-    sumar as sumarPrecio
+    sumar as sumarPrecio,
+    devolver as devolerPrecio
 }
