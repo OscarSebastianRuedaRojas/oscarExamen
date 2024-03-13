@@ -41,15 +41,11 @@ export class Resumen extends HTMLElement {
             <button id="terminar">Terminar</button>
         </div>
     `
-    const cards = this.querySelectorAll(".cards")
+    const button = this.querySelector("#terminar")
     const mainContent = document.querySelector("#mainContent")
-    cards.forEach(card => {
-        card.addEventListener("click", ()=>{
-            const precio = Number(card.id)
-            sumarPrecio(precio)
-            mainContent.innerHTML = "<diseño-app></diseño-app>"
-        })
-    });
+    button.addEventListener("click", ()=>{
+            mainContent.innerHTML = "<guardar-form></guardar-form>"
+    })
     }
 }
 customElements.define("resumen-precio", Resumen)

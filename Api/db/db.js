@@ -20,7 +20,6 @@ const getProduct = async () => {
     }
 }
 const postProduct = (datos) =>{
-
     fetch(`${URL_API}`,
 	{
 		method: "POST",
@@ -37,5 +36,5 @@ const postProduct = (datos) =>{
 }
 export {
     getProduct as getProducts,
-    postProduct as postProducts,
+    postProduct as postProducts
 };

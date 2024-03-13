@@ -1,3 +1,4 @@
+import { reinicioPrecio } from "../suma/suma.js"
 export class PagPrincipal extends HTMLElement {
     constructor(){
         super()
@@ -21,6 +22,7 @@ export class PagPrincipal extends HTMLElement {
         const button = this.querySelector("#empezar")
         const mainContent = document.querySelector("#mainContent")
         button.addEventListener("click", ()=>{
+            reinicioPrecio()
             mainContent.innerHTML = "<nivel-calidad></nivel-calidad>"
         })
     }

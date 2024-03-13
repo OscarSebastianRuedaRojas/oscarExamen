@@ -36,6 +36,7 @@ body{
     background-color: rgb(31, 220, 220);
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .containerNivelCalidad{
     display: flex;
@@ -170,4 +171,36 @@ diseño-app, monetizacion-app, autenticacion-app{
     margin-top: 1rem;
     font-size: 1.5rem;
     border-radius: 5px;
+    cursor: pointer;
+}
+fieldset{
+    border: none;
+}
+#formulario{
+    background-color: white;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#formulario .submit{
+    padding: 1rem 3rem;
+    color: white;
+    background-color: rgb(31, 220, 220);
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#formulario legend{
+    font-size: 2rem;
+}
+#formulario label{
+    font-size: 1.3rem;
+}
+.containerSubmit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

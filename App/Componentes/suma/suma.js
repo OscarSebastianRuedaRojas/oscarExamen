@@ -5,7 +5,9 @@ const sumar = (precio)=>{
     console.log(precioTotal);
 }
 const devolver = ()=> precioTotal
+const reinicio = () => precioTotal = 0
 export{
     sumar as sumarPrecio,
-    devolver as devolerPrecio
+    devolver as devolerPrecio,
+    reinicio as reinicioPrecio
 }
