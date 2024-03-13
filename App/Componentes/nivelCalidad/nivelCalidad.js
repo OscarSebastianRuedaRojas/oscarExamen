@@ -35,6 +35,15 @@ export class NivelCalidad extends HTMLElement {
             </article>
         </div>
     `
+    const cards = this.querySelectorAll(".cardNivelCalidad")
+    const mainContent = document.querySelector("#mainContent")
+    cards.forEach(card => {
+        card.addEventListener("click", ()=>{
+            mainContent.innerHTML = "<tipo-app></tipo-app>"
+        })
+    });
     }
+    
+
 }
 customElements.define("nivel-calidad", NivelCalidad)

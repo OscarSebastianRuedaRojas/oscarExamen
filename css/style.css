@@ -71,3 +71,37 @@ nivel-calidad{
     display: flex;
     justify-content: center;
 }
+.containers{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.containers h2{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.containers picture img{
+    width: 100%;
+}
+.containers article{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    cursor: pointer;
+}
+.containers article section:hover{
+    background-color: gray;
+    transform: translateY(-10px);
+}
+.containers article .text{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+tipo-app{
+    display: flex;
+    justify-content: center;
+}
