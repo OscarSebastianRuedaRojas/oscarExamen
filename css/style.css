@@ -105,7 +105,7 @@ tipo-app{
     display: flex;
     justify-content: center;
 }
-diseño-app, monetizacion-app{
+diseño-app, monetizacion-app, autenticacion-app{
     display: flex;
     justify-content: center;
 }

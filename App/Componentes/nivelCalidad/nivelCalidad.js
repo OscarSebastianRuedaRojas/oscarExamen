@@ -8,7 +8,7 @@ export class NivelCalidad extends HTMLElement {
         <div class="containerNivelCalidad">
             <h2>¿Que nivel de calidad estas buscando?</h2>
             <article>
-                <section class="cardNivelCalidad">
+                <section class="cardNivelCalidad" id="300000">
                     <picture class="imgNivel">
                         <img src="storage/img/answer-1-1.png" alt="">
                     </picture>
@@ -16,7 +16,7 @@ export class NivelCalidad extends HTMLElement {
                         Calidad Optima
                     </p>
                 </section>
-                <section class="cardNivelCalidad">
+                <section class="cardNivelCalidad" id="380000">
                     <picture class="imgNivel">
                         <img src="storage/img/answer-1-2.png" alt="">
                     </picture>
@@ -24,7 +24,7 @@ export class NivelCalidad extends HTMLElement {
                         Buena relacion calidad/precio
                     </p>
                 </section>
-                <section class="cardNivelCalidad">
+                <section class="cardNivelCalidad" id="200000">
                     <picture class="imgNivel">
                         <img src="storage/img/answer-1-3.png" alt="">
                     </picture>
@@ -39,6 +39,7 @@ export class NivelCalidad extends HTMLElement {
     const mainContent = document.querySelector("#mainContent")
     cards.forEach(card => {
         card.addEventListener("click", ()=>{
+            const precio = Number(card.id)
             mainContent.innerHTML = "<tipo-app></tipo-app>"
         })
     });
