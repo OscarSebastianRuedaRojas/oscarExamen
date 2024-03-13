@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.container{
+.containerPrincipal{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,19 +21,53 @@ body{
     text-align: center;
     color: white;
 }
-.container h1{
+.containerPrincipal .textPrincipal{
     font-size: 3rem;
 }
-.container h1 span{
+.containerPrincipal .textPrincipal span{
     color: rgb(31, 220, 220);
 }
-.container p{
+.containerPrincipal .textSecundaryPagPrincipal{
     margin: 1rem;
 }
-.container .empezar{
+.containerPrincipal .empezar{
     padding: 1rem 3rem;
     color: white;
     background-color: rgb(31, 220, 220);
     border: none;
     border-radius: 5px;
+}
+.containerNivelCalidad{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.containerNivelCalidad h2{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.containerNivelCalidad picture img{
+    width: 100%;
+}
+.containerNivelCalidad article{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    cursor: pointer;
+}
+.containerNivelCalidad article section:hover{
+    background-color: gray;
+    transform: translateY(-10px);
+}
+.containerNivelCalidad article .text{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+nivel-calidad{
+    display: flex;
+    justify-content: center;
 }

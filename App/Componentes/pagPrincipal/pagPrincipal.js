@@ -1,24 +1,28 @@
-export class pagPrincipal extends HTMLElement {
+export class PagPrincipal extends HTMLElement {
     constructor(){
         super()
         this.render()  
     }
     render(){
-        console.log("holaaaa");
         this.innerHTML = /* HTML */`
-        <div class="container">
+        <div class="containerPrincipal">
             <picture class="imgPrincipal">
                 <img src="storage/img/imagePrincipal.png" alt="">
             </picture>
             <article>
-                <h1>
+                <h1 class="textPrincipal">
                     ¿Cuanto cuesta desarrollar mi<span> app <br>GBP</span>?
                 </h1>
-                <p>Calcula de forma rapida el costo para crear tu app, contestando estas sencilla preguntas</p>
+                <p class="textSecundaryPagPrincipal">Calcula de forma rapida el costo para crear tu app, contestando estas sencilla preguntas</p>
                 <button class="empezar" id="empezar">EMPEZAR</button>
             </article>
         </div>
         `
+        const button = this.querySelector("#empezar")
+        const mainContent = document.querySelector("#mainContent")
+        button.addEventListener("click", ()=>{
+            mainContent.innerHTML = "<nivel-calidad></nivel-calidad>"
+        })
     }
 }
-customElements.define("pagina-principal", pagPrincipal)
+customElements.define("pagina-principal", PagPrincipal)
