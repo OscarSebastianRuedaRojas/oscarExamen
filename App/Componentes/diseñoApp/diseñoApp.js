@@ -1,4 +1,4 @@
-export class TipoApp extends HTMLElement {
+export class DiseñoApp extends HTMLElement {
     constructor(){
         super()
         this.render()  
@@ -6,50 +6,43 @@ export class TipoApp extends HTMLElement {
     render(){
         this.innerHTML = /* HTML */`
         <div class="containers">
-            <h2>¿Que tipo de App necesitas?</h2>
+            <h2>¿Que diseño quieres que tenga tu App?</h2>
             <article>
                 <section class="cards">
                     <picture class="imgNivel">
-                        <img src="storage/img/answer-2-1.png" alt="">
+                        <img src="storage/img/answer-3-1.png" alt="">
                     </picture>
                     <p class="text">
-                        Aplicacion Android
+                        Interfaz sencilla
                     </p>
                 </section>
                 <section class="cards">
                     <picture class="imgNivel">
-                        <img src="storage/img/answer-2-2.png" alt="">
+                        <img src="storage/img/answer-3-2.png" alt="">
                     </picture>
                     <p class="text">
-                        Aplicacion IOS
+                        interfaz personalizado
                     </p>
                 </section>
                 <section class="cards">
                     <picture class="imgNivel">
-                        <img src="storage/img/answer-2-3.png" alt="">
+                        <img src="storage/img/answer-3-3.png" alt="">
                     </picture>
                     <p class="text">
-                        Aplicacion Windows Phone
+                        interfaz replicada de la web
                     </p>
                 </section>
                 <section class="cards">
                     <picture class="imgNivel">
-                        <img src="storage/img/answer-2-4.png" alt="">
+                        <img src="storage/img/answer-3-4.png" alt="">
                     </picture>
                     <p class="text">
-                        Aplicacion Android + IOS
+                        No necesito diseño
                     </p>
                 </section>
             </article>
         </div>
     `
-    const cards = this.querySelectorAll(".cards")
-    const mainContent = document.querySelector("#mainContent")
-    cards.forEach(card => {
-        card.addEventListener("click", ()=>{
-            mainContent.innerHTML = "<diseño-app></diseño-app>"
-        })
-    });
     }
 }
-customElements.define("tipo-app", TipoApp)
+customElements.define("diseño-app", DiseñoApp)
