@@ -1,4 +1,4 @@
-export class DiseñoApp extends HTMLElement {
+export class Monetizacion extends HTMLElement {
     constructor(){
         super()
         this.render()  
@@ -6,38 +6,38 @@ export class DiseñoApp extends HTMLElement {
     render(){
         this.innerHTML = /* HTML */`
         <div class="containers">
-            <h2>¿Que diseño quieres que tenga tu App?</h2>
+            <h2>¿Como Monetizar con tu App?</h2>
             <article>
                 <section class="cards">
                     <picture class="imgNivel">
-                        <img src="storage/img/answer-3-1.png" alt="">
+                        <img src="storage/img/answer-4-1.png" alt="">
                     </picture>
                     <p class="text">
-                        Interfaz sencilla
+                        Aplicacion gratuita con publicidad
                     </p>
                 </section>
                 <section class="cards">
                     <picture class="imgNivel">
-                        <img src="storage/img/answer-3-2.png" alt="">
+                        <img src="storage/img/answer-4-2.png" alt="">
                     </picture>
                     <p class="text">
-                        interfaz personalizado
+                        Aplicacion de pago
                     </p>
                 </section>
                 <section class="cards">
                     <picture class="imgNivel">
-                        <img src="storage/img/answer-3-3.png" alt="">
+                        <img src="storage/img/answer-4-3.png" alt="">
                     </picture>
                     <p class="text">
-                        interfaz replicada de la web
+                        Compras dentro de la app
                     </p>
                 </section>
                 <section class="cards">
                     <picture class="imgNivel">
-                        <img src="storage/img/answer-3-4.png" alt="">
+                        <img src="storage/img/answer-4-4.png" alt="">
                     </picture>
                     <p class="text">
-                        No necesito diseño
+                        Otros / No lo se todavia
                     </p>
                 </section>
             </article>
@@ -52,4 +52,4 @@ export class DiseñoApp extends HTMLElement {
     });
     }
 }
-customElements.define("diseño-app", DiseñoApp)
+customElements.define("monetizacion-app", Monetizacion)
