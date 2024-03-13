@@ -1,3 +1,4 @@
+import { sumarPrecio } from "../suma/suma.js"
 export class TipoApp extends HTMLElement {
     constructor(){
         super()
@@ -48,6 +49,7 @@ export class TipoApp extends HTMLElement {
     cards.forEach(card => {
         card.addEventListener("click", ()=>{
             const precio = Number(card.id)
+            sumarPrecio(precio)
             mainContent.innerHTML = "<diseño-app></diseño-app>"
         })
     });

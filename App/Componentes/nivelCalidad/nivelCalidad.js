@@ -1,3 +1,4 @@
+import { sumarPrecio } from "../suma/suma.js"
 export class NivelCalidad extends HTMLElement {
     constructor(){
         super()
@@ -40,6 +41,7 @@ export class NivelCalidad extends HTMLElement {
     cards.forEach(card => {
         card.addEventListener("click", ()=>{
             const precio = Number(card.id)
+            sumarPrecio(precio)
             mainContent.innerHTML = "<tipo-app></tipo-app>"
         })
     });
